@@ -18,30 +18,12 @@ int main()
       }
       else
       {
-        if(i==1)
+        if(i==q)
         {
-            //process
-          if(q==1)
-          {
-            cout<<n/2<<endl;
-          }
-          else
-          {
-            cout<<(n+1)/2<<endl;
-          }
+          cout<<n/2<<endl;
         }
-        else if(i==2)
-        {
-            //process
-          if(q==1)
-          {
-            cout<<(n+1)/2<<endl;
-          }
-          else
-          {
-            cout<<n/2<<endl;
-          }
-        }
+        else
+          cout<<(n+1)/2<<endl;
       }
     }
     t--;
