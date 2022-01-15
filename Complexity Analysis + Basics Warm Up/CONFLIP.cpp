@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-  int t,j,g,i,n,q;
+  int t,j,g,i,n,q,answer;
   cin>>t;
   while(t>0)
   {
@@ -11,20 +11,8 @@ int main()
     for(j=0;j<g;j++)
     {
       cin>>i>>n>>q;
-      //print value
-      if(n%2==0)
-      {
-        cout<<n/2<<endl;
-      }
-      else
-      {
-        if(i==q)
-        {
-          cout<<n/2<<endl;
-        }
-        else
-          cout<<(n+1)/2<<endl;
-      }
+      answer = (n%2==0 || i==q)?n/2:(n+1)/2;
+      cout<<answer<<endl;
     }
     t--;
   }
